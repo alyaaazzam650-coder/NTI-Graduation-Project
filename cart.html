@@ -39,16 +39,17 @@
         <input type="text" placeholder="What are you looking for">
         <i class="bi bi-search"></i>
       </div>
-      <i class="bi bi-heart"></i>
-      <i class="bi bi-cart"></i>
-      <i class="bi bi-person"></i>
+      <i class="fa-regular fa-heart"></i>
+       <i class="fa-solid fa-cart-shopping"></i>
+       <i class="fa-regular fa-user"></i>
     </div>
   </div>
 </nav>
 
 <div class="container my-4" >
-  <a href="#"> <small>Home </small></a>/ 
-   <a href="#"> <small></small>Cart </small></a>
+  <a href="#"> <small>Home </small></a>
+  /
+   <a href="cart.html"><small>Cart </small></a>
 </div>
 
 <!-- Cart -->
@@ -94,7 +95,7 @@
            class="form-control quantity">
   </div>
 
-  <div class="col-12 col-md-2 item-subtotal">$1100</div>
+  <div class="col-12 col-md-2 item-subtotal">1100</div>
 </div>
 
     <div class="d-flex justify-content-between mb-4">
@@ -107,7 +108,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6 d-flex gap-2">
+      <div class="col-md-4 d-flex gap-2">
         <input type="text" class="form-control" placeholder="Coupon Code">
         <button class="btn btn-danger">
           <i class="fa-solid fa-ticket me-1"></i> Apply Coupon
@@ -120,7 +121,7 @@
 
           <div class="d-flex justify-content-between">
             <span>Subtotal:</span>
-            <span>$1750</span>
+            <span>1750</span>
           </div>
 
           <div class="d-flex justify-content-between">
@@ -132,7 +133,7 @@
 
           <div class="d-flex justify-content-between fw-bold">
             <span>Total:</span>
-            <span>$1750</span>
+            <span>1750</span>
           </div>
 
           <button class="btn btn-danger w-100 mt-3">
@@ -165,23 +166,23 @@
 
       <div class="col-md-2">
         <h6>Account</h6>
-        <p>My Account</p>
-        <p>Login / Register</p>
-        <p>Cart</p>
-        <p>Wishlist</p>
+        <p> <a href="#">Account </a> </p>
+        <p> <a href="#">Login / Register </a></p>
+        <p> <a href="cart.html">Cart </a></p>
+        <p> <a href="wishlist.html">Wishlist </a></p>
       </div>
 
       <div class="col-md-2">
         <h6>Quick Link</h6>
-        <p>Privacy Policy</p>
-        <p>Terms Of Use</p>
-        <p>FAQ</p>
-        <p>Contact</p>
+        <p> <a href="#" >Policy </a></p>
+        <p> <a href="#" > Terms Of Use </a></p>
+        <p><a href="#" >FAQ </a> </p>
+        <p> <a href="#" ></a>Contact </a></p>
       </div>
 
       <div class="col-md-2">
         <h6>Download App</h6>
-        <p class="small text-muted">Save $3 with App New User Only</p>
+        <p class="small">Save $3 with App New User Only</p>
         <div class="d-flex gap-3">
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -207,7 +208,10 @@
       </div>
     </div>
   </div>
+  <hr>
+<p style="text-align: center; color: gray; padding: 20px;"> &#169Copyright Rimel 2022. All right reserved</p>
 </footer>
+
 <script src="assets/cart.js"></script>
 </body>
 </html>

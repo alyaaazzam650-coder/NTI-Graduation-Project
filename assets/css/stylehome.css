@@ -1,0 +1,231 @@
+/* style.css */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #e0e0e0;
+    border: 1px solid #bbb;
+    opacity: 1;
+    transition: background 0.2s, border 0.2s;
+}
+.dot.active {
+    background: #d10024;
+    border: 1px solid #d10024;
+}
+.nav-link.active {
+    border-bottom: 2px solid #222;
+}
+.navbar-brand {
+    letter-spacing: 1px;
+}
+/* Make all Bootstrap icons black */
+.bi {
+    color: #000 !important;
+}
+footer i.bi {
+    color: white !important;
+}
+/* Light red carousel indicators */
+.carousel-indicators [data-bs-target] {
+    background-color: #FFCDD2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 4px;
+    opacity: 1;
+    transition: background 0.2s;
+}
+.carousel-indicators .active {
+    background-color: #DB4444;
+}
+.card .btn-light {
+    color: #DB4444;
+    border: none;
+}
+.card .btn-light:hover {
+    background: #ffeaea;
+}
+.card .badge.bg-danger {
+    background: #DB4444 !important;
+}
+.btn-danger {
+    background: #DB4444 !important;
+    border: none;
+}
+.border.bg-danger, .bg-danger {
+    background: #DB4444 !important;
+    color: #fff !important;
+}
+.border.bg-danger:hover, .bg-danger:hover {
+    filter: brightness(0.95);
+}
+/* Card image area and Add To Cart button */
+.card-img-container {
+    position: relative;
+    background: #f8f8f8;
+}
+.card-img-container .add-cart-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    display: block !important;
+}
+.card-img-container:hover .add-cart-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+.card {
+    min-width: 210px;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+.card-body {
+    padding-top: 2.5rem !important;
+}
+
+/* Category section sizing */
+.row.row-cols-md-6 > .col > .border,
+.row.row-cols-md-6 > .col > .bg-danger {
+    min-height: 140px;
+    max-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row.row-cols-md-6 > .col i {
+    font-size: 2.2rem !important;
+    margin-bottom: 0.5rem;
+}
+.row.row-cols-md-6 > .col div {
+    font-size: 1.1rem;
+}
+
+.Qr{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topbar {
+     font-size: 14px;
+     }
+.container-80 { 
+    width: 80%;
+     margin: 0 auto; 
+    }
+.search-input {
+     width: 220px; 
+    }
+.carousel-slide-bg {
+     background: #000; 
+    }
+.brand-icon {
+     width: 32px;
+    vertical-align: middle;
+     }
+.img-max-320 { max-height: 320px; }
+.img-max-360 { max-height: 360px; }
+.accent-dot {
+     color: #DB4444; 
+     font-size: 1.5rem;
+     }
+.accent-text {
+     color: #DB4444; 
+    }
+.timer-label {
+     font-size: 12px;
+      font-weight: 500;
+     }
+.card-img-height-180 {
+     height: 180px; 
+    }
+.card-img-height-220 { height: 220px; }
+.product-img-120 { max-height: 120px; max-width: 100%; object-fit: contain; }
+.product-img-180 { max-height: 180px; max-width: 100%; object-fit: contain; }
+.product-img-220 { max-height: 220px; max-width: 100%; object-fit: contain; }
+.add-cart-bottom-28 { bottom: -28px; z-index: 2; }
+.add-cart-bottom-36 { bottom: -36px; z-index: 2; }
+.carousel-control-w40 { width: 40px; }
+#flashAllGrid, #bestAllGrid { display: none; }
+.category-item { cursor: pointer; }
+.featured-banner { background: linear-gradient(90deg, #000 70%, #222 100%); min-height: 340px; }
+.featured-text { max-width: 420px; background: rgba(0,0,0,0.3); width: 100%; }
+.featured-banner-dark { background: #222; }
+.timer-circle { background: #fff; color: #000; border-radius: 50%; width: 48px; height: 48px; display:flex; align-items:center; justify-content:center; }
+.btn-buy { background: #00FF99; color: #000; border: none; font-weight: 600; }
+.view-all-btn-danger { background: #DB4444; }
+.price { color: #DB4444; }
+.small-muted { font-size: 13px; }
+.bg-dark-rounded-icon { background: rgba(0,0,0,0.3); width:100%; }
+.card-img-object-cover { object-fit: cover; }
+/* Utility classes */
+btn-right-40 { right: 40px !important; }
+.min-h-160 { min-height: 160px; }
+.min-h-340 { min-height: 340px; }
+.small-14 { font-size: 14px; }
+.color-swatch { width:16px; height:16px; border-radius:50%; border:2px solid #fff; display:inline-block; }
+.swatch-red { background: #DB4444; }
+.swatch-black { background: #000; }
+.swatch-green { background: #B0FFB0; }
+.swatch-00ff99 { background: #00FF99; }
+.featured-title { font-size: 2.2rem; }
+.badge-new { background: #00FF99 !important; color: #000 !important; }
+
+/* Active category styling (red with white icon/text and subtle shadow) */
+.category-item { transition: transform .12s ease, box-shadow .12s ease, background .12s ease; }
+.category-item.category-active {
+    background: #DB4444;
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 6px 18px rgba(219,68,68,0.18);
+    transform: translateY(-2px);
+}
+.category-item.category-active .bi {
+    color: #fff !important;
+}
+.category-item.category-active div {
+    color: #fff;
+}
+
+/* Account dropdown / menubar styles */
+.user-menu .account-btn { background: transparent; border: none; }
+.user-menu .avatar { width: 40px; height: 40px; font-size: 18px; }
+.account-dropdown {
+    position: absolute;
+    right: 0;
+    top: 56px;
+    min-width: 220px;
+    border-radius: 6px;
+    overflow: hidden;
+    color: #fff;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    z-index: 2000;
+}
+.account-dropdown ul li { cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background 0.12s ease; }
+.account-dropdown ul li:hover { background: rgba(255,255,255,0.03); }
+.cart-badge { font-size: 11px; padding: 0.25em 0.45em; }
+
+/* Small responsive tweak to keep dropdown on small screens */
+@media (max-width: 576px) {
+    .account-dropdown { right: 8px; left: 8px; top: 64px; }
+}
+
+/* Avatar active state (only red when dropdown open) */
+.user-menu .avatar.active {
+    background: #DB4444 !important;
+    color: #fff !important;
+}
+
+/* Make menubar & dropdown icons white (override global .bi black rule) */
+.navbar .user-menu .bi {
+    color: #ffffff !important;
+}

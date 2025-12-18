@@ -30,9 +30,15 @@ body {
   height: 38px;
 }
 
+
 .footer {
   background: #000;
   margin-top: 60px;
+  color: white;
+}
+
+.footer a{
+  color: white;
 }
 
 .footer input {

@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-        <a href="#">ShopNow</a>
+        <a href="homepage.html">ShopNow</a>
     </header>
 
   <nav class="navbar navbar-expand-lg bg-white border-bottom">
@@ -23,20 +23,20 @@
     <a class="navbar-brand fw-bold" href="#">Exclusive</a>
 
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item"><a class="nav-link" href="wishlist.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
-      <li class="nav-item"><a class="nav-link" href="#Account">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#Account">Sign Up</a></li>
+      <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="account.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
     </ul>
 
     <div class="d-flex align-items-center gap-3">
       <div class="search-box">
         <input type="text" placeholder="What are you looking for">
-        <i class="bi bi-search"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <i class="bi bi-heart"></i>
-      <i class="bi bi-cart"></i>
-      <i class="bi bi-person"></i>
+       <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="account.html"><i class="fa-regular fa-user"></i></a>
     </div>
   </div>
 </nav>
@@ -54,22 +54,31 @@
 
     <div class="row g-4">
       <!-- Card 1 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm d-flex flex-column">
-          <div class="position-relative d-flex justify-content-center align-items-center card-img-container">
-            <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-35%</span>
-            <img src="assets/images/bag.png" class="card-img" alt="Gucci bag">
-            <i class="bi bi-trash position-absolute top-0 end-0 p-2" style="cursor:pointer;"></i>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-between flex-grow-1">
-            <div class="text-start">
-              <h6 class="card-title">Gucci Duffle Bag</h6>
-              <p class="card-text text-danger mb-1">$960 <del class="text-muted">$1160</del></p>
-            </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
-          </div>
-        </div>
+       <div class="col-12 col-md-6 col-lg-3">
+  <div class="card h-100 shadow-sm d-flex flex-column">
+
+    <div class="position-relative d-flex justify-content-center align-items-center card-img-container">
+      <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-35%</span>
+      <img src="assets/images/bag.png" class="card-img" alt="Gucci bag">
+      <i class="bi bi-trash position-absolute top-0 end-0 p-2" style="cursor:pointer;"></i>
+    </div>
+
+    <div class="card-body d-flex flex-column justify-content-between flex-grow-1">
+      <div class="text-start">
+        <h6 class="card-title">Gucci Duffle Bag</h6>
+        <p class="card-text text-danger mb-1">$960 <del class="text-muted">$1160</del></p>
       </div>
+
+      <button class="btn btn-dark w-100 mt-3 add-to-cart"
+              data-name="Gucci Duffle Bag"
+              data-price="960"
+              data-image="assets/images/bag.png">
+        Add To Cart
+      </button>
+
+    </div>
+  </div>
+</div>
 
       <!-- Card 2 -->
       <div class="col-12 col-md-6 col-lg-3">
@@ -83,7 +92,13 @@
               <h6 class="card-title">RGB Liquid CPU Cooler</h6>
               <p class="card-text text-danger mb-1">$1960</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+           <button class="btn btn-dark w-100 mt-3 add-to-cart"
+              data-name="RGB Liquid CPU Cooler"
+              data-price="1960"
+              data-image="assets/images/gammaxx-l240-argb-1-500x500 1.png">
+        Add To Cart
+      </button>
+
           </div>
         </div>
       </div>
@@ -100,7 +115,12 @@
               <h6 class="card-title">GP11 Shooter USB Gamepad</h6>
               <p class="card-text text-danger mb-1">$550</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+           <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="P11 Shooter USB Gamepad"
+              data-price="550"
+              data-image="assets/images/black shield.png">
+               Add To Cart
+      </button>
           </div>
         </div>
       </div>
@@ -117,7 +137,13 @@
               <h6 class="card-title">Quilted Satin Jacket</h6>
               <p class="card-text text-danger mb-1">$750</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+                  <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="Quilted Satin Jacket"
+              data-price="750"
+              data-image="assets/images/jacket.png">
+               Add To Cart
+      </button>
+        
           </div>
         </div>
       </div>
@@ -151,8 +177,23 @@
                <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1">-35%</span>
               <h6 class="card-title">ASUS FHD Gaming Laptop</h6>
               <p class="card-text text-danger mb-1">$960 <del class="text-muted">$1160</del></p>
+              <div class="icons">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                <p style="color: darkgray;font-weight: bold;">(65)</p>
+               
+              </div>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+                    <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="ASUS FHD Gaming Laptop"
+              data-price="960"
+              data-image="assets/images/laptop.png">
+               Add To Cart
+      </button>
+        
           </div>
         </div>
       </div>
@@ -169,7 +210,22 @@
               <h6 class="card-title">IPS LCD Gaming Monitor</h6>
               <p class="card-text text-danger mb-1">$1160</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+              <div class="icons">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                <p style="color: darkgray;font-weight: bold;">(65)</p>
+               
+              </div>
+                         <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="IPS LCD Gaming Monitor"
+              data-price="1160"
+              data-image="assets/images/tv.png">
+               Add To Cart
+      </button>
+        
           </div>
         </div>
       </div>
@@ -186,7 +242,22 @@
               <h6 class="card-title">HAVIT HV-G92 Gamepad</h6>
               <p class="card-text text-danger mb-1">$560</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+              <div class="icons">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                <p style="color: darkgray;font-weight: bold;">(65)</p>
+               
+              </div>
+                              <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="HAVIT HV-G92 Gamepad"
+              data-price="560"
+              data-image="assets/images/red shield.png">
+               Add To Cart
+      </button>
+        
           </div>
         </div>
       </div>
@@ -203,7 +274,22 @@
               <h6 class="card-title">AK-900 Wired Keyboard</h6>
               <p class="card-text text-danger mb-1">$200</p>
             </div>
-            <button class="btn btn-dark w-100 mt-3"><i class="bi bi-cart"></i> Add To Cart</button>
+              <div class="icons">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                <p style="color: darkgray;font-weight: bold;">(65)</p>
+               
+              </div>
+                                     <button class="btn btn-dark w-100 mt-3 add-to-cart"
+            data-name="AK-900 Wired Keyboard"
+              data-price="200"
+              data-image="assets/images/keyboard.png">
+               Add To Cart
+      </button>
+        
           </div>
         </div>
       </div>
@@ -231,23 +317,23 @@
 
       <div class="col-md-2" id="Account">
         <h6>Account</h6>
-        <p>My Account</p>
-        <p>Login / Register</p>
-        <p>Cart</p>
-        <p>Wishlist</p>
+       <p> <a href="#">My Account</a></p>
+       <p><a href="#">Login / Register</a></p> 
+       <p> <a href="cart.html">Cart</a></p>
+         <p><a href="wishlist.html">Wishlist </a></p>
       </div>
 
       <div class="col-md-2">
         <h6>Quick Link</h6>
-        <p>Privacy Policy</p>
-        <p>Terms Of Use</p>
-        <p>FAQ</p>
-        <p>Contact</p>
+       <p> <a href="#">Privacy Policy</a></p>
+        <p> <a href="#">Terms Of Use</a></p>
+         <p><a href="#">FAQ</a></p>
+        <p> <a href="#">Contact</a></p>
       </div>
 
       <div class="col-md-2">
         <h6>Download App</h6>
-        <p class="small text-muted">Save $3 with App New User Only</p>
+        <p class="small">Save $3 with App New User Only</p>
         <div class="d-flex gap-3">
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -273,7 +359,9 @@
       </div>
     </div>
   </div>
+   <hr>
+<p style="text-align: center; color: gray; padding: 20px;"> &#169Copyright Rimel 2022. All right reserved</p>
 </footer>
-
+<script src="assets/js/wishlist.js"></script>
 </body>
-</html>
+</html> 

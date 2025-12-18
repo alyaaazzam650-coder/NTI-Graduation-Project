@@ -30,7 +30,9 @@ body{
 }
 
 
-
+.container .navbar-brand{
+  color: black;
+}
 .top-bar {
   background: #000;
   font-size: 14px;
@@ -90,6 +92,11 @@ body{
 .footer {
   background: #000;
   margin-top: 60px;
+  color: white;
+}
+
+.footer a {
+  color: white;
 }
 
 .footer input {
@@ -97,6 +104,8 @@ body{
   border: 1px solid #fff;
   color: #fff;
 }
+
+
 
 i {
   cursor: pointer;

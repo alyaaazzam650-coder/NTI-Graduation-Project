@@ -91,6 +91,7 @@ font-weight: normal;
 .card-img-container {
   height: 200px; 
   overflow: hidden;
+  background-color: #F5F5F5;
 }
 
 .card-img {
@@ -102,6 +103,7 @@ font-weight: normal;
 
 .card-body {
   flex-grow: 1;
+ 
 }
 
 .card-title, .card-text {
@@ -146,11 +148,24 @@ font-weight: normal;
   margin-top: 60px;
 }
 
+
+.footer a {
+  text-decoration: none;
+  color:white ;
+}
+
+.footer a :hover{
+  transition: ease-in;
+  
+}
+
+
 .footer input {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
 }
+
 
 i {
   cursor: pointer;
