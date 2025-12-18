@@ -1,0 +1,75 @@
+body {
+  background: #f8f8f8;
+}
+
+.top-bar {
+  background: #000;
+  font-size: 14px;
+}
+
+.container a{
+  color: #7D8184;
+  text-decoration: none;
+}
+
+.container a :hover{
+  color: #000;
+}
+.form-control {
+  background: #f5f5f5;
+  border: none;
+  padding: 10px;
+}
+
+.order-box {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.coupon-box input {
+  height: 38px;
+}
+
+.footer {
+  background: #000;
+  margin-top: 60px;
+}
+
+.footer input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+i {
+  cursor: pointer;
+}
+
+.app-download {
+  margin-top: 10px;
+}
+
+.qr-img {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  padding: 4px;
+}
+
+.store-btn {
+  width: 110px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .app-download {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .order-box {
+    margin-top: 30px;
+  }
+}

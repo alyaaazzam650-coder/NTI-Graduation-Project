@@ -1,0 +1,141 @@
+
+@font-face{
+    font-family: "poppins";
+     src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face{
+    font-family: "poppins";
+     src: url(../fonts/Poppins-Regular.ttf);
+}
+body{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.header a {
+    color: #fff;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+
+
+.top-bar {
+  background: #000;
+  font-size: 14px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 6px 30px 6px 10px;
+  border: 1px solid #ddd;
+}
+
+.search-box i {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container a{
+  text-decoration: none;
+  color: #7D8184;
+}
+.container a :hover{
+  color: #000;
+}
+.quantity {
+  width: 80px;
+}
+
+.coupon-box {
+  max-width: 420px;
+}
+
+.coupon-box .form-control {
+  border-radius: 6px 0 0 6px;
+}
+
+.coupon-btn {
+  padding: 0 16px;
+  font-size: 14px;
+  border-radius: 0 6px 6px 0;
+  height: 38px;
+  white-space: nowrap;
+}
+
+.remove {
+  color: red;
+  cursor: pointer;
+}
+
+.cart-total {
+  border: 1px solid #ddd;
+}
+
+.footer {
+  background: #000;
+  margin-top: 60px;
+}
+
+.footer input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+i {
+  cursor: pointer;
+}
+
+.app-download {
+  margin-top: 10px;
+}
+
+.qr-img {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  padding: 4px;
+}
+
+.store-btn {
+  width: 110px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .app-download {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .order-box {
+    margin-top: 30px;
+  }
+}
+
+i {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) 
+  .cart-total {
+    margin-top: 30px;
+  }
